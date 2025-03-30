@@ -18,6 +18,5 @@ int main () {
     readInputFile(comps, loads, compWeights, compVolumes, loadWeights, loadVolumes, loadPrices);
     createLpSolveFormatFile(comps, loads, compWeights, compVolumes, loadWeights, loadVolumes, loadPrices);
 
-    printf("success\n");
     return 0;
 }
