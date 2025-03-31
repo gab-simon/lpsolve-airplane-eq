@@ -1,7 +1,7 @@
 CC = gcc
 CFLAGS = -Wall -std=c99 -g
 
-TARGET = airplane
+TARGET = carga
 
 SRCS = main.c utils.c
 OBJS = $(SRCS:.c=.o)
