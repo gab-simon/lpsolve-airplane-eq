@@ -65,8 +65,12 @@ void restrictions(int k, int n, int *w, int *v, int *p, int *t, int *g) {
 	}
 
 	for (int i = 1; i <= k; i++) {
-		printf("%.8f x%d1 + %.8f x%d2 + %.8f x%d3 + %.8f x%d4 - x%d1 - x%d2 - x%d3 - x%d4 <= 0;\n",
-			(double)w[i] / soma, (i % k) + 1, (double)w[i] / soma, (i % k) + 1, (double)w[i] / soma, (i % k) + 1 , (double)w[i] / soma, (i % k) + 1, i , i , i , i );
+		for (int j = 1; j <= n; j++) {
+			printf("%.8f x%d%d - x%d%d ", (double)w[i] / soma, (i % k) + 1, j, i, j);
+			if ( j != n ) printf(" + ");
+		}
+		
+		printf(" <= 0;\n");
 	}
 
 	printf("\n");
