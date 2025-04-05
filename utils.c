@@ -23,7 +23,6 @@ void objectiveFunction(int k, int n, int *g) {
 	}
 	printf("\n");
 }
-#include <stdio.h>
 
 void restriction_weight(int k, int n, int *w) {
     printf("\n");
